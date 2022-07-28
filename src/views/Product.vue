@@ -4,6 +4,6 @@ import SingleProduct from '@/components/SingleProduct.vue';
 
 <template>
   <main>
-    <SingleProduct :product_id="this.$route.params.id"/>
+    <SingleProduct :product_id="parseFloat(this.$route.params.id)"/>
   </main>
 </template>
